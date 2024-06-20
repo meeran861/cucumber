@@ -1,0 +1,248 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Launch Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8031000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launch flipkart application \"https://www.flipkart.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.flipkart.com/\"",
+                  "offset": 33
+                }
+              ],
+              "location": "com.flipkartstepdefinition.BuyingMobile.user_launch_flipkart_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-20T15:05:19.038Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8238000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.flipkart.Hooks.Hooks.launchBrowse()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "mobile purchase",
+        "description": "",
+        "id": "mobile-buying;mobile-purchase",
+        "after": [
+          {
+            "result": {
+              "duration": 121000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.flipkart.Hooks.Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4038000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searching the mobiles",
+            "match": {
+              "location": "com.flipkartstepdefinition.BuyingMobile.user_searching_the_mobiles()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3027000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click choosing mobile",
+            "match": {
+              "location": "com.flipkartstepdefinition.BuyingMobile.user_click_choosing_mobile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3170000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click buy now button",
+            "match": {
+              "location": "com.flipkartstepdefinition.BuyingMobile.user_click_buy_now_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Mobile Buying",
+    "description": "",
+    "id": "mobile-buying",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/MobileBuying.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Launch Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3725000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches flipkart application \"https://www.flipkart.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.flipkart.com/\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.flipkartstepdefinition.MobileSearchSteps.user_launches_flipkart_application(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-06-20T15:05:45.958Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4788000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.flipkart.Hooks.Hooks.launchBrowse()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validating mobile purchase",
+        "description": "",
+        "id": "mobile-search-validation;validating-mobile-purchase",
+        "after": [
+          {
+            "result": {
+              "duration": 320000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.flipkart.Hooks.Hooks.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6485000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user searching the mobile",
+            "match": {
+              "location": "com.flipkartstepdefinition.MobileSearchSteps.user_searching_the_mobile(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Iphone 14",
+                  "Samsung",
+                  "Oneplus",
+                  "Redmi"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7163000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user click on add to cart",
+            "match": {
+              "location": "com.flipkartstepdefinition.MobileSearchSteps.user_click_on_add_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4836000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user should go to home page",
+            "match": {
+              "location": "com.flipkartstepdefinition.MobileSearchSteps.user_should_go_to_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5145000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "navigate into cart and check order updated",
+            "match": {
+              "location": "com.flipkartstepdefinition.MobileSearchSteps.navigate_into_cart_and_check_order_updated()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Mobile Search Validation",
+    "description": "",
+    "id": "mobile-search-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/MobileSearch.feature",
+    "tags": []
+  }
+]

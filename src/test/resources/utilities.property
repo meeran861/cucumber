@@ -1,0 +1,10 @@
+#Updated
+#Thu Jun 20 20:35:27 IST 2024
+envl=uat
+urlQa=https\://www.flipkart.com/
+password=pass
+url=https\://www.flipkart.com/
+file=C\:\\Users\\srika\\eclipse-workspace\\cucumber\\src\\test\\resources\\utilities.property
+key=value
+env=qa
+username=meeran
