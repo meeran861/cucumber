@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -194,5 +195,11 @@ public class BaseClass implements IBaseClass {
 	@Override
 	public void appLaunch(String url) {
 		driver.get(url);
+		
+	
+	}
+
+	public void inputKeys(WebElement ele, String value, Keys enter) {
+		ele.sendKeys(value,enter);
 		
 	}}

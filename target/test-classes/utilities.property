@@ -1,7 +1,0 @@
-key=value
-url= https://www.flipkart.com/
-username= meeran
-password= pass
-env = qa
-envl = uat
-file = C:\\Users\\srika\\eclipse-workspace\\cucumber\\src\\test\\resources\\utilities.property

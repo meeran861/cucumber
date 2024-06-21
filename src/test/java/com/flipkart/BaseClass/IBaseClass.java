@@ -1,7 +1,7 @@
 package com.flipkart.BaseClass;
 import java.util.List;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -34,5 +34,6 @@ public interface IBaseClass {
 	void enterFrame(String value, int i, String frame);
 	void exitFrame(String value);
 	WebDriverWait waits();
+	void inputKeys(WebElement ele, String value, Keys enter);
 	
 }
